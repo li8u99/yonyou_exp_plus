@@ -1,5 +1,4 @@
-![img.png](https://uploader.shimo.im/f/nRJnlPb3ixMs0uO9.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDMwOTg0ODMsImciOiJXaHg4azNId0RUUHB3eFlyIiwiaWF0IjoxNjQzMDk4MTgzLCJ1c2VySWQiOjQ0OTc3ODU4fQ.skGnj7fpaeTWd9kDlLszC-7CS0ak8_8ltkiy4gLpF9s)
-
+![](https://i.bmp.ovh/imgs/2022/01/d58851a5e94d8bd1.png)
 # 更新日志
 2022.01.25：</br>
 1、 增加 用友ERP-NC 目录遍历漏洞、用友 NC bsh.servlet.BshServlet 远程命令执行漏洞。
@@ -38,11 +37,11 @@ Options:
 ```
 python3 seeyon_exp.py -u url
 ```
-![img_2.png](https://uploader.shimo.im/f/GaDCPGp4qNVKOWOf.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDMwOTg0ODMsImciOiJXaHg4azNId0RUUHB3eFlyIiwiaWF0IjoxNjQzMDk4MTgzLCJ1c2VySWQiOjQ0OTc3ODU4fQ.skGnj7fpaeTWd9kDlLszC-7CS0ak8_8ltkiy4gLpF9s)
+![](https://i.bmp.ovh/imgs/2022/01/f95ff177cd2eace9.png)
 ```
 python3 seeyon_exp.py -u url  --att
 ```
-![img_1.png](https://uploader.shimo.im/f/SvSVmNUkNt0IaxwI.png!thumbnail?accessToken=eyJhbGciOiJIUzI1NiIsImtpZCI6ImRlZmF1bHQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJhY2Nlc3NfcmVzb3VyY2UiLCJleHAiOjE2NDMwOTg0ODMsImciOiJXaHg4azNId0RUUHB3eFlyIiwiaWF0IjoxNjQzMDk4MTgzLCJ1c2VySWQiOjQ0OTc3ODU4fQ.skGnj7fpaeTWd9kDlLszC-7CS0ak8_8ltkiy4gLpF9s)
+![](https://i.bmp.ovh/imgs/2022/01/f1b35573f248ff97.png)
 </br>
 </br>
 **默认使用冰蝎3的webshell，密码为rebeyond**
