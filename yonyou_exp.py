@@ -3,12 +3,13 @@
 import os
 from pyfiglet import Figlet
 from optparse import OptionParser
+from poc import traversal, BshServlet
 
 
 if __name__ == '__main__':
     # os.system('@echo off')
     os.system('chcp 936 >nul')
-    f = Figlet(font='slant')
+    f = Figlet(font='doom')
     print('\033[31m====================================================\033[0m')
     print('\033[34m{}\033[0m'.format(f.renderText('YonyouNC')))
     print('   \033[33mAuthor:Qianlingshan    ver:1.0    time:2022-01-21\033[0m')
@@ -24,23 +25,13 @@ if __name__ == '__main__':
         urls = f.readlines()
         for url in urls:
             url = url.strip('\n')
-            information.check(url)
-            getSessionList.get_sessionlist(url)
-            webmail.check(url)
-            sql.run(url, options.attack)
-            session_upload.get_session(url, options.attack)
-            htmlofficeservlet.check(url, options.attack)
-            ajax.check(url, options.attack)
+            traversal.check_erp(url)
+            BshServlet.BshServlet(url, options.attack)
         print('\033[34m[#]扫描已完成，结果保存至result.txt\033[0m')
 
     if options.url:
-        information.check(options.url)
-        getSessionList.get_sessionlist(options.url)
-        webmail.check(options.url)
-        sql.run(options.url, options.attack)
-        session_upload.get_session(options.url, options.attack)
-        htmlofficeservlet.check(options.url, options.attack)
-        ajax.check(options.url, options.attack)
+        traversal.check_erp(options.url)
+        BshServlet.BshServlet(options.url, options.attack)
         print('\033[34m[#]扫描已完成，结果保存至result.txt\033[0m')
 
 
