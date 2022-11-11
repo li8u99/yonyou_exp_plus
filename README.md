@@ -1,7 +1,7 @@
 ![](https://i.bmp.ovh/imgs/2022/01/d58851a5e94d8bd1.png)
 # 更新日志
 2022.11.11：</br>
-1、 增加 用友 U8 OA getSessionList.jsp 敏感信息泄漏漏洞、用友 U8 OA test.jsp SQL注入漏洞、用友FE协作办公平台 templateOfTaohong_manager.jsp 目录遍历漏洞、用友 GRP-U8 UploadFileData 任意文件上传漏洞、用友 GRP-U8 Proxy SQL注入。
+1、 增加 用友 U8 OA getSessionList.jsp 敏感信息泄漏漏洞、用友 U8 OA test.jsp SQL注入漏洞、用友FE协作办公平台 templateOfTaohong_manager.jsp 目录遍历漏洞、用友 GRP-U8 UploadFileData 任意文件上传漏洞、用友 GRP-U8 Proxy SQL注入。</br>
 2022.01.25：</br>
 1、 增加 用友ERP-NC 目录遍历漏洞、用友 NC bsh.servlet.BshServlet 远程命令执行漏洞。
 
