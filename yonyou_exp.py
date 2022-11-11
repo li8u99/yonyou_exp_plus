@@ -3,12 +3,15 @@
 import os
 from pyfiglet import Figlet
 from optparse import OptionParser
-from poc import traversal, BshServlet
+from poc import traversal, BshServlet, xxe, UploadFileData, getSessionList, sqli
+import urllib3
 
+
+urllib3.disable_warnings()
 
 if __name__ == '__main__':
     # os.system('@echo off')
-    os.system('chcp 936 >nul')
+    # os.system('chcp 936 >nul')
     f = Figlet(font='doom')
     print('\033[31m====================================================\033[0m')
     print('\033[34m{}\033[0m'.format(f.renderText('YonyouNC')))
@@ -26,7 +29,12 @@ if __name__ == '__main__':
         for url in urls:
             url = url.strip('\n')
             traversal.check_erp(url)
+            traversal.check_templateOfTaohong_manager_dt(url)
             BshServlet.BshServlet(url, options.attack)
+            xxe.check_Proxy_SQL(url)
+            UploadFileData.UploadFileData(url, options.attack)
+            getSessionList.check_getSessionList(url)
+            sqli.check_sqli(url)
         print('\033[34m[#]扫描已完成，结果保存至result.txt\033[0m')
 
     if options.url:
